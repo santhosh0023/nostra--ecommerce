@@ -38,3 +38,25 @@
      background-color:#eeab5300 ;
      outline: none;
  }
+ @media screen and (max-width:600px) 
+ {
+    .collections{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .occasion{
+        padding: 2px;
+        text-align: center;
+        font-size: 10px;
+    }
+    .searchbar{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        padding: 10px;
+        background-color: aquamarine;
+        margin: 15px;
+    }
+    
+ }
