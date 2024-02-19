@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nostra</title>
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,800;1,100;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- fontawesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- stylesheet link -->
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="bg-white p-4 flex items-center justify-between shadow-xl  sticky top-0 z-20">
+     <h1 class="text-2xl">nostra</h1>
+     <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+      <ul class="flex    gap-5 text-gray-600 hidden md:flex ">
+        <li>
+            <a class="hover:underline   hover:text-black  " href="#">home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="#">new arrival</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="#">most wanted</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="./collections.html">collections</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black" href="./contact.html">contact</a>
+        </li>
+    </ul>
+    </nav>
+   
+    <!-- side navbar -->
+    <section id="sidenav" class="bg-gray-200 fixed z-20 top-0   transition-all duration-1000" style="width: 30%; height: 100vh; left: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+
+        </div>
+        
+        <ul class="flex   flex-col  gap-10 justify-items-center text-gray-600 ">
+            <li>
+                <a class="hover:underline   hover:text-black  " href="#">home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">new arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">most wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./collections.html">collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html">contact</a>
+            </li>
+        </ul>
+    </section>
+    <!-- slider section -->
+
+   <div class=" mx-auto p-1 px-10   ">
+    <div class="relative">
+        
+            
+            <ul id="slider">
+                <li class="h-96 object-cover"><img class="h-full object-cover w-full" src="./slider-one.jpg " alt=""></li>
+                <div class="absolute  top-11 left-0 h-full w-full">
+                    <h2 class="text-4xl  p-28 font-bold text-white my-auto w-full text-center">Level up your style with our</h2>
+                    <h4 class="text-2xl   font-bold text-white my-auto w-full text-center">summer collections</h4>
+                    
+                </div>
+                
+                    
+               
+
+                
+                <li class="h-96 object-cover hidden">
+                    <img class="h-full object-cover w-full" src="./slider-one.jpg " alt="">
+                </li>
+                <li class="h-96 object-cover hidden">
+                    <img class="h-full object-cover w-full" src="./slider-one.jpg " alt="">
+                </li>
+            
+
+            </ul>
+        <div class="absolute flex h-full w-full top-0 left-0 ">
+            <div class="my-auto  w-full flex justify-between">
+            <button onclick="prev()" class= " bg-white p-3 bg-opacity-80">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                  </svg>
+                  
+            </button>
+            <button onclick="next()" class="p-3 bg-white  bg-opacity-80" >
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                  </svg>
+                  
+            </button>
+            </div>
+
+        </div>
+            
+
+    </div>
+
+   </div>
+   <!-- brands -->
+   <section>
+    <h1 class="text-3xl font-bold m-4 p-2">Brands</h1>
+    <div class="flex flex-row gap-10 md:gap-36 text-center items-center mt-10 m-10">
+        <div>
+            <img src="./puma.png" style="width: 5vw;" alt="">
+            <p>Puma </p>
+        </div>
+        <div>
+            <img src="./adidas.png" style="width: 5vw;" alt="">
+            <p>adidas </p>
+        </div>
+        <div>
+            <img src="./simple.png" style="width: 5vw;" alt="">
+            <p>simple </p>
+        </div>
+        <div>
+            <img src="./leaves.png" style="width: 5vw;" alt="">
+            <p>leaves </p>
+        </div>
+        <div>
+            <img src="./behance.png" style="width: 5vw;" alt="">
+            <p>behnace </p>
+        </div>
+        <div>
+            <img src="./twitch.png" style="width: 5vw;" alt="">
+            <p>twitch</p>
+        </div>
+        <div>
+            <img src="./nike.png" style="width: 5vw;" alt="">
+            <p>nike</p>
+        </div>
+</div>
+   </section>
+    <!-- New Arrivals -->
+    <section class="p-3 m-2">
+        <h2 class="text-3xl font-bold m-4">New Arrivals</h2>
+        <div class="relative ">
+            <div class="relative m-5 grid grid-cols-2 md:grid-cols-4 mt-5 gap-2">
+            <div >
+                <img src="./newarrivals/f1.png" style="border-radius:5px ;"  alt="">
+                <div class="absolute  m-10 items-center " style="bottom: 0;">
+                <button class="items-center bg-white rounded-lg p-1 "><a href="./collections.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+
+            <div >
+                <img src="./newarrivals/f2.png" style="border-radius:5px ; " alt="">
+                <div class="absolute bottom-1 m-10 items-center ">
+                <button class="items-center bg-white rounded-lg p-1"><a href="./collections.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+            </div>
+
+            <div >
+                <img src="./newarrivals/f3.png"style="border-radius:5px ;" alt="">
+                <div class="absolute bottom-1 m-10 items-center">
+                <button class="items-center bg-white rounded-lg p-1"><a href="./collections.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+            </div>
+
+            <div   id="mostwanted">
+                <img src="./newarrivals/f4.png" style="border-radius:5px ;"alt="">
+                <div class="absolute bottom-1 m-10 items-center">
+                <button class="items-center bg-white rounded-lg p-1"><a href="./collections.html">Shop Now <i class="fa-solid fa-arrow-right"></i></a></button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <!-- Most Wanted -->
+    <!-- <div class="most-wanted m-3  ">
+        <h2 class="text-3xl font-bold">Most Wanted</h2>
+        <div class="flex  gap-10 m-4  p-2  " style="scroll-behavior: smooth; box-sizing: border-box; margin-top: 30px;">
+            
+
+            <div class="dress-card relative ">
+                <img src="./newarrivals/f3.png" class="dress " alt="">
+                
+                <p class=" absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;"  alt="">
+            </div>
+
+            <div class="dress-card relative">
+                <img src="./mostwanted/f4 (1).jpg" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart  absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+            <div class="dress-card relative">
+                <img src="./mostwanted/f5.jpg" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+
+            <div class="dress-card relative">
+                <img src="./mostwanted/f7.jpg" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+
+            <div class="dress-card relative">
+                <img class="" src="./mostwanted/f5.jpg" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+            <div class="dress-card relative">
+                <img src="./newarrivals/f1.png" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+            <div class="dress-card relative">
+                <img src="./mostwanted/f8.jpg" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+            <div class="dress-card relative">
+                <img src="./newarrivals/f2.png" class="dress" alt="">
+                <p class="absolute top-0 bg-red-500 text-white">Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart absolute bottom-1 mx-28"  style="height: 30px;" alt="">
+            </div>
+
+        </div>
+    </div> -->
+    <div class="most-wanted">
+        <h2>Most Wanted</h2>
+        <div class="dress-container">
+
+            <div class="dress-card">
+                <img src="./mostwanted/f4 (1).jpg" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+            <div class="dress-card">
+                <img src="./newarrivals/f1.png" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+            <div class="dress-card">
+                <img src="./mostwanted/f7.jpg" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+
+            <div class="dress-card">
+                <img src="./mostwanted/f8.jpg" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+
+            <div class="dress-card">
+                <img src="./mostwanted/f5.jpg" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+            <div class="dress-card">
+                <img src="./newarrivals/f1.png" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+            <div class="dress-card">
+                <img src="./newarrivals/f3.png" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+            <div class="dress-card">
+                <img src="./newarrivals/f4.png" class="dress" alt="">
+                <p>Sale</p>
+                <img src="./newarrivals/blackheart.png" class="black-heart" alt="">
+            </div>
+
+        </div>
+    </div>
+<!-- customer review -->
+<section class="">
+    <div class="flex justify-between mt-[5vw] mb-[2vw] items-center text-[1.5vw] " >
+        <div>
+    <h1 class=" font-bold m-5 md:text-3xl">we provide you best </h1>
+    <h1 class=" font-bold m-5 md:text-3xl">customer experience</h1>
+
+        </div>
+        <div>
+    <p class="m-5   md:text-sm" > || We ensure that our customer have the best shopping experience</p>
+    </div>
+    </div>
+    <div class=" md:flex grid grid-cols-2  md:grid-cols-4   gap-5">
+        <div class=" p-2 m-6  bg-gray-400  ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+              </svg>
+              
+           <h2 class="text-xl font-medium" >original products</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, rem?</p>
+        </div>
+        <div class=" p-2 m-6 bg-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+              </svg>
+              
+          
+           <h2 class="text-xl font-medium" >satisfaction gurantee</h2>
+           <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, saepe.</p>
+        </div>
+        <div class=" p-2 m-6 bg-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+              </svg>
+              
+              
+           <h2 class="text-xl font-medium" >New Arrival Everyday</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, neque.</p>
+        </div>
+        <div class=" p-2 m-6 bg-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+              </svg>
+              
+           <h2 class="text-xl font-medium" >Fast & Free Shipping</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, error?</p>
+        </div>
+  
+     
+    </div>
+   </section>
+
+<!--limited offer-->
+
+<div class="flex justify-items-start items-center bg-gray-900  p-10 text-white mt-5vw">
+    <div>
+    <img src="./offer.jpg" alt="">
+    </div>
+    <div class=" flex  flex-col p-5">
+        <h1 class="text-4xl font-bold">Limited Offer</h1>
+        <h3 class="text-2xl font-bold">35% OFF on this for the first 30 Customers</h3>
+        
+        <button class="rounded-lg text-white bg-black w-24 "><a href="./collections.html">Shop Now<i class="fa-solid fa-arrow-right"></i></a></button>
+    </div>
+</div>
+
+
+    
+   <!-- join our news -->
+   <section class="p-2 text-center">
+    <h1 class="font-bold text-3xl mt-5 text-center">Join our news letter</h1>
+    <p>signup for our email newspaper to go exclusive discounts,updates,and more</p>
+    <input type="text" style="width: 80%;" class="border border-black p-2 m-3">
+    <br>
+    <button class="bg-black text-white p-3 m-1 rounded-lg ">subcribe  <i class="fa-solid fa-arrow-right"></i></button>
+   </section>
+   <!-- footer -->
+
+    <section class="bg-gray-900   text-white p-10 flex flex-col gap-3">
+    <h1 class="text-4xl font-bold">nostra</h1>
+    <p>the standard chuck of lorem ipsum used since the 1500s is reproduced below for those interest</p>
+    <div class="justify-items gap-10 flex">
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+    </div>
+    <p>&copy;nostra2024</p>
+   </section>
+    <script src="./index.js"></script>
+   
+</body>
+</html>

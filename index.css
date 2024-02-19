@@ -1,0 +1,52 @@
+
+.most-wanted{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dress-container{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-bottom: 30px;
+}
+
+.dress-container::-webkit-scrollbar {
+    display: none;
+}
+
+.dress-card{
+    width:250px;
+    height:250px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.dress-card p{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: red;
+    color:white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.5vw;
+}
+
+.dress-card .dress{
+    width:250px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.black-heart{
+    position: absolute;
+    width: 30px;
+    right: 5%;
+    bottom: 5%;
+}
