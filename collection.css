@@ -1,62 +1,38 @@
-.divisions{
-   
-    padding: 15px;
-
-}
-.occasion{
-    margin: 5px;
-    padding: 70px;
-    
-}
-
-.product{
+.divide_section{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+.filter_section{
     flex-basis: 25%;
-    flex-grow: 3;
-     
-   padding: 30px;
+    position: relative;
+    font-size: 2vw;
+}
+.filter_occasion,.filter_colors,.filter_arrivals{
+    margin-top: 4vw;
+    margin-bottom: 10px;
+}
+.vertical_line{
+    border: none;
+    border-left:3px solid black ;
+    height: 100%;
+    position: absolute;
+    margin:  0 10px;
+    top: 0;
+    right: 0;
+}
+
+.product_section{
+    flex-basis: 75%;
+    padding: 10px;
 }
 .products{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 20px;
+    margin-top: 2vw;
+    font-size: 1vw;
+    text-align: center;
+    justify-content: space-between;
 }
-.search{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
- }
-
- .searchbar input{
-     width:100%;
-     font-size: 16px;
-     margin-left: 10px;
-     border: none;
-     background-color:#eeab5300 ;
-     outline: none;
- }
- @media screen and (max-width:600px) 
- {
-    .collections{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .occasion{
-        padding: 2px;
-        text-align: center;
-        font-size: 10px;
-    }
-    .searchbar{
-        display: flex;
-        justify-content: space-between;
-        width: 50%;
-        padding: 10px;
-        background-color: aquamarine;
-        margin: 15px;
-    }
-    
- }
+.product img{
+    width: 20vw;
+}
